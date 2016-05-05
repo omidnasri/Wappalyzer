@@ -1,5 +1,5 @@
 {
-	"apps": {
+  "apps": {
     "Strato": {
       "cats": [
         6
@@ -993,6 +993,16 @@
 			],
 			"icon": "C++.png",
 			"website": "isocpp.org"
+		},
+		"Caddy": {
+			"cats": [
+				22
+			],
+			"headers": {
+				"Server": "^Caddy$"
+			},
+			"icon": "caddy.svg",
+			"website": "caddyserver.com"
 		},
 		"CFML": {
 			"cats": [
@@ -2203,6 +2213,16 @@
 			"icon": "Erlang.png",
 			"website": "www.erlang.org"
 		},
+		"Exagon Concept": {
+			"cats": [
+				1
+			],
+			"headers": {
+				"Server": "Exagon Server"
+			},
+			"icon": "ExagonConcept.svg",
+			"website": "www.exagon-concept.com"
+		},
 		"Exhibit": {
 			"cats": [
 				25
@@ -3159,7 +3179,7 @@
 			"cats": [
 				2
 			],
-			"env": "^(?:IPBoard$|ipb_var)",
+			"env": "^(?:IPBoard$|ipb_var|ipsSettings)",
 			"html": "<link[^>]+ipb_[^>]+\\.css",
 			"icon": "IPB.png",
 			"script": "jscripts/ips_",
@@ -4528,6 +4548,20 @@
 			"icon": "default.png",
 			"website": "lavrsen.dk/foswiki/bin/view/Motion"
 		},
+		"MotoCMS": {
+			"cats": [
+				1
+			],
+			"icon": "MotoCMS.svg",
+			"script": ".*\\/mt-includes\\/[asetj]{2,6}\\/.*\\.js.*",
+			"html": "<link [^>]*href=\"[^>]*\\/mt-content\\/[^>]*\\.css",
+			"implies": [
+				"PHP",
+				"AngularJS",
+				"jQuery"
+			],
+			"website": "motocms.com"
+		},
 		"Movable Type": {
 			"cats": [
 				1
@@ -5447,6 +5481,18 @@
 			"script": "protovis.*\\.js",
 			"website": "mbostock.github.com/protovis"
 		},
+		"Public CMS": {
+			"cats": [
+				1
+			],
+			"headers": {
+				"Set-Cookie": "PUBLICCMS_USER",
+				"X-Powered-PublicCMS": ""
+			},
+			"icon": "Public CMS.png",
+			"implies": "Java",
+			"website": "www.publiccms.com"
+		},
 		"PubMatic": {
 			"cats": [
 				36
@@ -5492,6 +5538,16 @@
 			"icon": "Quantcast.png",
 			"script": "edge\\.quantserve\\.com/quant\\.js",
 			"website": "www.quantcast.com"
+		},
+		"Question2Answer": {
+			"cats" : [
+				15
+			],
+			"html": "<!-- Powered by Question2Answer",
+			"icon": "question2answer.png",
+			"implies": "PHP",
+			"script": "\\./qa-content/qa-page\\.js\\?([0-9.]+)\\;version:\\1",
+			"website": "www.question2answer.org"
 		},
 		"Quick.CMS": {
 			"cats": [
@@ -5821,7 +5877,7 @@
 			"env": "^Rx$\\;confidence:20",
 			"icon": "RxJS.png",
 			"script": "rx(?:\\.\\w+)?(?:\\.compat)?(?:\\.min)?\\.js",
-			"website": "reactive-extensions.github.io/RxJS/"
+			"website": "reactivex.io"
 		},
 		"S.Builder": {
 			"cats": [
@@ -5937,7 +5993,7 @@
 			"env": "^SWFObject$",
 			"icon": "SWFObject.png",
 			"script": "swfobject.*\\.js",
-			"website": "blog.deconcept.com/swfobject"
+			"website": "github.com/swfobject/swfobject"
 		},
 		"Saia PCD": {
 			"cats": [
@@ -6676,6 +6732,17 @@
 			"icon": "SyntaxHighlighter.png",
 			"website": "github.com/syntaxhighlighter"
 		},
+		"ThinkPHP": {
+			"cats": [
+				18
+			],
+			"headers": {
+				"X-Powered-By": "ThinkPHP"
+			},
+			"implies": "PHP",
+			"icon": "ThinkPHP.png",
+			"website": "www.thinkphp.cn"
+		},
 		"TWiki": {
 			"cats": [
 				8
@@ -7049,7 +7116,7 @@
 				"X-Powered-By": "Ubuntu"
 			},
 			"icon": "Ubuntu.png",
-			"website": "ubuntu.com/business/server/overview"
+			"website": "www.ubuntu.com/server"
 		},
 		"UltraCart": {
 			"cats": [
